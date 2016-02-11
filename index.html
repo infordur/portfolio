@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="./css/normalize.css" type="text/css" rel="stylesheet">
+	<link href="./css/animate.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="./css/estilo.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<script src="./js/jquery-2.2.0.js" type="text/javascript"></script>
+	<script src="./js/waypoint.js" type="text/javascript"></script>
+	<script src="./js/menu.js" type="text/javascript"></script>
+	<script src="./js/desplazamiento.js" type="text/javascript"></script>
+	<script src="./js/efectos.js" type="text/javascript"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Portfolio</title>
+</head>
+<body>
+	<div class="hamburger">
+		<div class="_layer -top"></div>
+		<div class="_layer -mid"></div>
+		<div class="_layer -bottom"></div>
+	</div>
+	<nav class="menuppal">
+	    <ul>
+	      <li><a href="#fondoInicio">Inicio</a></li>
+	      <li><a href="#bloqueMisTrabajos">Mis Trabajos</a></li>
+	      <li><a href="#bloqueSobreMi">Sobre mi</a></li>
+	      <li><a href="#contactame">Contactame</a></li>
+	    </ul>
+	</nav>
+
+	<div id="fondoInicio">
+		<div class="datosInicio">
+			<picture>
+				<source
+			    media="(min-width: 768px)"
+			    srcset="./img/yoS.png">
+			  <img
+			    src="./img/yoS.png"
+			    alt="Pablo Durán Camacho">
+			</picture>
+
+			<h1 class="fadeIn animated">Pablo Durán Camacho</h1>
+			<h2 class="slideInLeft animated">Developer & Sysadmin</h2>
+		</div>
+
+		<a class="flechaBajar" href="#bloqueMisTrabajos"><i class="material-icons">keyboard_arrow_down</i></a>
+	</div>
+	
+	<section id="bloqueDisenoFB">
+		<h2>Diseño, Desarrollo Fontend y Backend</h2>
+		<p>Bienvenidos a mi portfolio personal. Aquí es donde investigo y practico con mis habilidades de desarrollo frontend y donde podrás conocer algo más acerca de mi o de mis trabajos.</p>
+	</section>
+
+	<section id="bloqueMisTrabajos">
+		<h2 class="titulo">Mis trabajos</h2>
+		<div class="misTrabajos">
+			<article>
+				<a class="fondoImagen" href="http://infordur.github.io/gestorTareas/">
+					<picture>
+
+						<source
+					    media="(min-width: 1000px)"
+					    srcset="./img/gt.png">
+
+						<source
+					    media="(min-width: 768px)"
+					    srcset="./img/gt.png">
+					  <img
+					    src="./img/gt.png"
+					    alt="Diseño Web">
+					</picture>
+				</a>
+			</article>
+
+			<article>
+				<a class="fondoImagen" href="http://infordur.github.io/casasRurales/">
+					<picture>
+						
+						<source
+					    media="(min-width: 1000px)"
+					    srcset="./img/cr.png">
+
+						<source
+					    media="(min-width: 768px)"
+					    srcset="./img/cr.png">
+					  <img
+					    src="./img/cr.png"
+					    alt="Diseño Responsive">
+					</picture>
+			</article>
+			</a>
+		</div>
+	</section>
+
+	<section id="bloqueSobreMi">
+		<h2 class="titulo">Sobre mi</h2>
+			<div class="conocimientos">
+			<h3 class="tituloConocimientos">Desarrollo</h3>
+			<ul class="barrasDevelopment">
+				<li habilidad="90"><span class="textoBarra">HTML(5)</span></li>
+				<li habilidad="90"><span class="textoBarra">CSS(3)</span></li>
+				<li habilidad="85"><span class="textoBarra">Javascript</span></li>
+				<li habilidad="80"><span class="textoBarra">jQuery</span></li>
+				<li habilidad="75"><span class="textoBarra">SASS</span></li>
+				<li habilidad="85"><span class="textoBarra">PHP</span></li>
+				<li habilidad="85"><span class="textoBarra">Java</span></li>
+			</ul>
+
+			<h3 class="tituloConocimientos">Productividad</h3>
+			<ul class="barrasProduction">
+				<li class="" habilidad="85"><span class="textoBarra">Git + Github, Bitbucket</span></li>
+				<li class="" habilidad="85"><span class="textoBarra">Microsoft Office, OpenOffice...</span></li>
+			</ul>
+
+			<h3 class="tituloConocimientos">Otros</h3>
+			<ul class="barrasOther">
+				<li class="" habilidad="100"><span class="textoBarra">Motivación</span></li>
+			</ul>
+
+	</section>
+
+	<section id="contactame">
+		<h2>Contáctame</h2>
+		<p>¿Estas interesado en contactar conmigo? puede ser para proponer algún proyecto o solamente para charlar un rato.
+		Puedes hacerlo de las siguientes maneras:</p>
+
+		<div class="redesSociales">
+			<ul class="twitter-linkedin">
+				<a href="https://twitter.com/infordur"><li class="twitter"><img src="./img/iconos/twitterS.png" alt="twitter"></li></a>
+				<a href="https://www.linkedin.com/profile/preview?vpa=pub&locale=es_ES"><li class="linkedin"><img src="./img/iconos/linkedinS.png" alt="linkedin"></li></a>
+			</ul>
+
+			<ul class="github-gmail">
+				<a href="https://github.com/infordur"><li class="github"><img src="./img/iconos/githubS.png" alt="github"></li></a>
+				<a href="mailto:PabloDuran13@gmail.com"><li class="gmail"><img src="./img/iconos/gmailS.png" alt="github"></li></a>
+			</ul>
+		</div>
+	</section>
+
+	
+</body>
+</html>
