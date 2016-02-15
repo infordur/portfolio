@@ -402,6 +402,7 @@ body{margin:0;padding:0;}
 
 
 /*Bloque contacto*/
+/*Bloque contacto*/
 
 #contactame{
 	background-color: #2AAA85;
@@ -433,15 +434,14 @@ body{margin:0;padding:0;}
 
 
 .redesSociales{
-  display: flex;
-	flex-flow: row;
-	margin:0 auto;
+	display: flex;
+	*flex-flow: column;
+	margin: 0 auto;
 }
 
 #contactame .twitter-linkedin{
 	display: flex;
-	flex-flow: column;
-	margin-left: 35px;
+	flex-flow: row;
 }
 
 
@@ -463,8 +463,10 @@ body{margin:0;padding:0;}
 
 #contactame .github-gmail{
 	display: flex;
-	flex-flow: column;
-  margin: 16px 0px;
+	flex-flow: row;
+	flex-wrap: wrap;
+	*margin: 0px;
+	padding: 0px;
 }
 
 #contactame .github{
@@ -488,17 +490,6 @@ body{margin:0;padding:0;}
 		background-size: cover;
 	}
 	
-	#fondoInicio picture{
-		width: 100%;
-		margin: 0 auto;
-    margin-top: 10%;
-	}
-	
-	#contactame .redesSociales{
-		margin-left:5%;
-	}
-	
-	
 }
 
 @media screen and (min-width:760px){
@@ -509,10 +500,6 @@ body{margin:0;padding:0;}
 	
 	#fondoInicio .datosInicio{
 		margin-top: 10%;
-	}
-	
-	#fondoInicio picture{
-		width: 50%
 	}
 	
 	.flechaBajar i{
@@ -531,57 +518,23 @@ body{margin:0;padding:0;}
 		font-size:23px;
 	}
 	
+
 	.redesSociales{
 		display: flex;
-		flex-flow: row wrap;
-		*margin: 0 auto;
-
+		flex-flow: column;
+		margin: 30px auto;
 	}
 
 	#contactame .twitter-linkedin{
-		display: flex;
 		flex-flow: row;
-	}
-
-
-	#contactame .twitter{
-		padding: 30px;
-		background-color: #5EA9DD;
-		margin-left: 30%;
-	}
-
-	#contactame .linkedin{
-		padding:  30px;
-		background-color: #0177B5;
-
-	}
-
-	#contactame .linkedin,.twitter,.github,.gmail{
-		text-align: center;
-	}
-
-	#contactame .github-gmail{
-		display: flex;
-		flex-flow: row;
-		flex-wrap: wrap;
-		*margin: 0px;
+		margin:auto;
 		padding: 0px;
 	}
 
-	#contactame .github{
-		padding: 30px;
-		background-color: #BBBBBB;
+	#contactame .github-gmail{
+		flex-flow: row;
+		margin:auto;
 	}
-
-	#contactame .gmail{
-		padding: 30px;
-		background-color: #DC4638;
-	}
-
-	#contactame .redesSociales li:hover{
-		background-color: #2C3E50;
-	}
-
 	
 }
 
@@ -600,6 +553,14 @@ body{margin:0;padding:0;}
 			margin: 0 auto;
 		}
 	
+	#bloqueDisenoFB{
+		*top: 100%;
+	}
+	
+	#bloqueMisTrabajos{
+		*top:115%;
+		*height: 40%;
+	}
 	
 	#bloqueMisTrabajos .misTrabajos{
 		display: flex;
@@ -611,12 +572,6 @@ body{margin:0;padding:0;}
 	
 	#bloqueSobreMi .titulo{
 		font-size:23px;
-	}
-	
-	#contactame .twitter{
-		padding: 30px;
-		background-color: #5EA9DD;
-		margin-left: 40%;
 	}
 	
 }
@@ -635,19 +590,9 @@ body{margin:0;padding:0;}
 		}
 	
 
-		#bloqueMisTrabajos article {
-			width: 100%;
-		}
-	
-		#bloqueSobreMi p{
-			text-align: center;
-		}
-
-		#contactame .twitter{
-			padding: 30px;
-			background-color: #5EA9DD;
-			margin-left: 70%;
-		}
+	#bloqueMisTrabajos article {
+		width: 100%;
+	}
 	
 }
 
@@ -684,14 +629,10 @@ body{margin:0;padding:0;}
 		margin: 0 auto;
 	}
 
+
+
 	#contactame p{
 		text-align: center;
-	}
-	
-	#contactame .twitter{
-		padding: 30px;
-		background-color: #5EA9DD;
-		margin-left: 82.5%;
 	}
 }
 

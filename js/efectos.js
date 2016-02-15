@@ -1,9 +1,7 @@
 $(document).ready(function () {
-	/*var $ventana=$(window);
-
-	var $posElem=$ventana.height()*2;
-
-	$ventana.scroll(function() {
+	
+	//alert($posElem);
+	/*$ventana.scroll(function() {
 		/* Act on the event */
 		/*if($ventana.scrollTop()>=$posElem){
 			//alert("Hola");
